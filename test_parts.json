@@ -1,0 +1,15 @@
+{
+  "units": "cm",
+  "base": "A",
+  "_dims_order": "[x = length, y = thickness, z = height]",
+  "parts": {
+    "A": { "dims": [2, 2, 5] },
+    "B": { "dims": [10, 2, 2] },
+    "C": { "dims": [2, 2, 5] }
+  },
+  "_points": "connection points are in each part's local frame, origin at its min corner (cm)",
+  "connections": [
+    { "parts": ["A", "B"], "points": [[0, 0, 5], [0, 0, 0]] },
+    { "parts": ["B", "C"], "points": [[10, 0, 0], [2, 0, 5]] }
+  ]
+}
